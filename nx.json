@@ -1,0 +1,24 @@
+{
+  "npmScope": "veni-vidi-vici",
+  "implicitDependencies": {
+    "angular.json": "*",
+    "package.json": "*",
+    "tsconfig.json": "*",
+    "tslint.json": "*",
+    "nx.json": "*"
+  },
+  "projects": {
+    "appitomy-e2e": {
+      "tags": []
+    },
+    "appitomy": {
+      "tags": []
+    },
+    "api": {
+      "tags": []
+    },
+    "api-interfaces": {
+      "tags": []
+    }
+  }
+}

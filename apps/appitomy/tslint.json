@@ -1,0 +1,7 @@
+{
+  "extends": "../../tslint.json",
+  "rules": {
+    "directive-selector": [true, "attribute", "veniVidiVici", "camelCase"],
+    "component-selector": [true, "element", "veni-vidi-vici", "kebab-case"]
+  }
+}
