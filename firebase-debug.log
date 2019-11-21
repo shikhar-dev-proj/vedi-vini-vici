@@ -1,0 +1,36 @@
+[debug] [2019-11-20T09:11:04.997Z] ----------------------------------------------------------------------
+[debug] [2019-11-20T09:11:04.999Z] Command:       /usr/local/bin/firebase /Users/shikhar/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase serve --only functions
+[debug] [2019-11-20T09:11:05.000Z] CLI Version:   7.8.0
+[debug] [2019-11-20T09:11:05.000Z] Platform:      darwin
+[debug] [2019-11-20T09:11:05.000Z] Node Version:  v10.15.3
+[debug] [2019-11-20T09:11:05.001Z] Time:          Wed Nov 20 2019 14:41:05 GMT+0530 (India Standard Time)
+[debug] [2019-11-20T09:11:05.001Z] ----------------------------------------------------------------------
+[debug] [2019-11-20T09:11:05.001Z] 
+[debug] [2019-11-20T09:11:05.010Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-11-20T09:11:05.011Z] > authorizing via signed-in user
+[debug] [2019-11-20T09:11:05.011Z] [iam] checking project veni-vidi-vici-29d06 for permissions ["firebase.projects.get"]
+[debug] [2019-11-20T09:11:05.013Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/veni-vidi-vici-29d06:testIamPermissions  
+
+[debug] [2019-11-20T09:11:06.451Z] <<< HTTP RESPONSE 200
+[debug] [2019-11-20T09:11:06.453Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/veni-vidi-vici-29d06  
+ 
+[debug] [2019-11-20T09:11:06.717Z] <<< HTTP RESPONSE 200
+[debug] [2019-11-20T09:11:06.837Z] TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received type undefined
+    at validateString (internal/validators.js:125:11)
+    at Object.join (path.js:1147:7)
+    at Object.<anonymous> (/Users/shikhar/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/serve/functions.js:20:39)
+    at Generator.next (<anonymous>)
+    at /Users/shikhar/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/serve/functions.js:7:71
+    at new Promise (<anonymous>)
+    at __awaiter (/Users/shikhar/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/serve/functions.js:3:12)
+    at Object.start (/Users/shikhar/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/serve/functions.js:18:16)
+    at /Users/shikhar/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/serve/index.js:15:23
+    at arrayMap (/Users/shikhar/.cache/firebase/tools/lib/node_modules/lodash/lodash.js:639:23)
+    at Function.map (/Users/shikhar/.cache/firebase/tools/lib/node_modules/lodash/lodash.js:9554:14)
+    at _serve (/Users/shikhar/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/serve/index.js:13:26)
+    at Command.module.exports.Command.description.option.option.option.option.before.action [as actionFn] (/Users/shikhar/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/commands/serve.js:46:16)
+    at Command.<anonymous> (/Users/shikhar/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/command.js:156:25)
+    at Generator.next (<anonymous>)
+    at fulfilled (/Users/shikhar/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/command.js:4:58)
+[error] 
+[error] Error: An unexpected error has occurred.
